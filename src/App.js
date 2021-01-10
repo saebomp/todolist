@@ -8,7 +8,7 @@ const App = () => {
   const usersData = [
     {id:1, name:'Tania', username:'taniaisgenius'},
     {id:2, name:'Johndoe', username:'whoisjohn'},
-    {id:1, name:'Ben', username:'Benisben'},
+    {id:3, name:'Ben', username:'Benisben'},
   ]
   const initialFormState = {id:null, name:'', username:''}
 
