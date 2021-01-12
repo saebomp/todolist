@@ -20,6 +20,7 @@ const App = () => {
   const addUser = (user) => {
     user.id = users.length + 1
     setUsers([...users, user])
+    console.log(users)
   }
 
   const deleteUser = (id) => {
@@ -39,7 +40,7 @@ const App = () => {
   return (
     <div className="container">
       <h1>CRUD App with Hooks</h1>
-      <div className="flex-row">
+      <div className="">
         <div className="flex-large">
           {editing ? (
             <div>
