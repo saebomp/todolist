@@ -34,12 +34,14 @@ const App = () => {
 
   const updateUser = (id, updateUser) => {
     setEditing(false)
-    setUsers(users.map((user) => (user.id === id ? updateUser:user)))
+    console.log('updateUser', updateUser)
+    setUsers(users.map((user) => (
+      user.id === id ? updateUser:user)
+      ))
   }
 
   return (
     <div className="container">
-      <h1>CRUD App with Hooks</h1>
       <div className="">
         <div className="flex-large">
           {editing ? (

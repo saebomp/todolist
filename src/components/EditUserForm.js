@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 
 const EditUserForm = (props) => {
   const [user, setUser] = useState(props.currentUser)
-
   useEffect(
     () => {
       setUser(props.currentUser)
@@ -12,6 +11,12 @@ const EditUserForm = (props) => {
 
   const handleInputChange = (event) => {
     const {name, value} = event.target
+    console.log('name', name) // user.name / user.username을 각각 가져옴
+    console.log('value', value) //value 는 내가 수정한 값
+    //name name
+    //value Tania1
+    //name username
+    //value taniaisgenius2
     setUser({...user, [name]:value})
   }
 
